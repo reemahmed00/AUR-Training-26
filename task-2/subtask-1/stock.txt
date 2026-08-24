@@ -1,4 +1,0 @@
-banana,2
-apple,3
-mango,12
-dates,10
