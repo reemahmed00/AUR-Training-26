@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'session2'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+          (os.path.join('share', package_name, 'config'),
+        glob('config/*.yaml')), 
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,6 +28,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+        'go_to_goal_server = session2.go_to_goal_server :main',
+        'client = session2.client:main', 
         ],
     },
 )
