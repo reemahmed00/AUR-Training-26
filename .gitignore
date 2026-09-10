@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ROS 2 build artifacts
+**/build/
+**/install/
+**/log/
+**/.pixi/
+**/pixi.lock
+
+# Zips
+*.zip
+
+# VS Code
+**/.vscode/
+
+# Python
+**/__pycache__/
+**/*.pyc
