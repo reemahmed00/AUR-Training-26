@@ -1,0 +1,6 @@
+type=Book|title=Dune|auther=Frank Herbert|isbn=9780441013593|status=AVAILABLE
+type=Dvd|title=Inception|director=Christopher Nolan|status=CHECKED_OUT
+type=Magazine|title=National Geographic|issue=2026-08|status=AVAILABLE
+type=Book|title=The Hobbit|auther=J.R.R. Tolkien|isbn=9780261102217|status=AVAILABLE
+type=Dvd|title=Interstellar|director=Christopher Nolan|status=AVAILABLE
+type=Magazine|title=National Geographic|issue=August 2026|status=AVAILABLE
