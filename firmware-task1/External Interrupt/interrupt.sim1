@@ -1,0 +1,37 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega32-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-124,-120" rotation="0" hflip="1" vflip="1" label="mega32-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="8 MHz" Program="../../../Desktop/AUR-training/AUR-Training-26/firmware-task1/External Interrupt/.pio/build/ATmega32/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Push" CircId="Push-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-184,12" rotation="0" hflip="1" vflip="1" label="Push-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-308,-112" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-112" rotation="-180" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-352,36" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Battery" CircId="Battery-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-192,-48" rotation="-180" hflip="1" vflip="1" label="Battery-6" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="5 V" Resistance="1 mΩ" />
+
+<item itemtype="Node" CircId="Node-7" mainComp="false" Pos="-284,12" />
+
+<item itemtype="Node" CircId="Node-8" mainComp="false" Pos="-336,12" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="mega32-1-PORTD2" endpinid="Push-2-switch0pinN" pointList="-132,8,-168,8,-168,12" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="mega32-1-PORTB0" endpinid="Led-4-lPin" pointList="-132,-112,-184,-112" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Led-4-rPin" endpinid="Resistor-3-rPin" pointList="-216,-112,-292,-112" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="mega32-1-RST" endpinid="Battery-6-lPin" pointList="-132,-48,-176,-48" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Battery-6-rPin" endpinid="Node-7-1" pointList="-208,-48,-284,-48,-284,12" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Push-2-pinP0" endpinid="Node-7-0" pointList="-200,12,-284,12" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Resistor-3-lPin" endpinid="Node-8-1" pointList="-324,-112,-336,-112,-336,12" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Node-7-2" endpinid="Node-8-0" pointList="-284,12,-336,12" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Node-8-2" endpinid="Ground-5-Gnd" pointList="-336,12,-352,12,-352,20" />
+
+</circuit>
